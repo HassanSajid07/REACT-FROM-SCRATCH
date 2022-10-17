@@ -1,0 +1,38 @@
+import React from 'react';
+import { Image,StyleSheet,TouchableNativeFeedback,View,Text,Alert, SafeAreaView,Button} from'react-native';
+export default function App (){
+  
+    
+
+    return (
+      
+
+      <SafeAreaView style = {styles.container}>
+      <SafeAreaView>
+      <Button 
+      color={'orange'}
+      title='click me' onPress={()=> Alert.alert("My title","My message",[
+        {text:"Yes",onPress: ()=>console.log("Yes")},
+        {text:"No",onPress:()=> console.log("No")},
+      ])}/>
+     
+
+             
+      </SafeAreaView>
+      
+      </SafeAreaView>
+
+    );
+  }
+
+
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    justifyContent: "center",
+    alignItems : "center"
+  },
+});
+

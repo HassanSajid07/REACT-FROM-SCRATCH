@@ -1,0 +1,39 @@
+import React from 'react';
+import { Image,StyleSheet,TouchableOpacity,View,Text, SafeAreaView} from'react-native';
+export default function App (){
+  
+    
+
+    return (
+      
+
+      <SafeAreaView style = {styles.container}>
+      <SafeAreaView>
+      <Text numberOfLines={1} >Hello world from react  </Text>
+      <TouchableOpacity  onPress={()=> console.log("Image Tapped")}>
+      <Image  source={{
+        width: 200,
+        height:300,
+        uri:"https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg?auto=compress&cs=tinysrgb&w=600"}}/>
+              </TouchableOpacity>
+     
+
+             
+      </SafeAreaView>
+      
+      </SafeAreaView>
+
+    );
+  }
+
+
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    justifyContent: "center",
+    alignItems : "center"
+  },
+});
+

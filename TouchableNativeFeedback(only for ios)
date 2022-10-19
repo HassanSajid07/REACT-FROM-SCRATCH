@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image,StyleSheet,TouchableNativeFeedback,View,Text, SafeAreaView} from'react-native';
+import { StyleSheet,TouchableNativeFeedback,View,Text, SafeAreaView} from'react-native';
 export default function App (){
   
     
@@ -10,7 +10,7 @@ export default function App (){
       <SafeAreaView style = {styles.container}>
       <SafeAreaView>
       <Text numberOfLines={1} >Hello world from react  </Text>
-      <TouchableNativeFeedback  onPress={()=> console.log("Image Tapped")}>
+      <TouchableNativeFeedback  onPress={()=> console.log("Image Tapped")}>              //Remember this only works on IOS , not supportive in Andriod
         <View style={{width:200,height:70,backgroundColor:'dodgerblue'}}/>  
               </TouchableNativeFeedback>
      
